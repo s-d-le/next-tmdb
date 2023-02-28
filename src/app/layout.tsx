@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import "./globals.css";
+import Providers from "./Providers";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,11 +15,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Header */}
-        <Header />
-        {/* Nav */}
-        {/* Search */}
-        {children}
+        {/* Context only works on client side. So for theme we need an extra provider. 
+        However anything inside the Providers is still server side (Next13)*/}
+        <Providers>
+          {/* Header */}
+          <Header />
+          {/* Nav */}
+          {/* Search */}
+          {children}
+        </Providers>
       </body>
     </html>
   );

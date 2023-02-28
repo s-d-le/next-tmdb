@@ -11,12 +11,9 @@ export type IMenuItem = {
 export default function MenuItem({ title, address, Icon }: IMenuItem) {
   return (
     <div>
-      <Link
-        href={address}
-        className="mx-4 lg:mx-6 hover:text-amber-600 text-gray-700"
-      >
-        <Icon className="text-2xl sm:hidden mx-4" />
-        <p className="hidden sm:inline my-2 text-sm">{title}</p>
+      <Link href={address} className="mx-4 hover:text-amber-600 lg:mx-6">
+        <Icon className="mx-4 text-2xl sm:hidden" />
+        <p className="my-2 hidden text-sm sm:inline">{title}</p>
       </Link>
     </div>
   );
