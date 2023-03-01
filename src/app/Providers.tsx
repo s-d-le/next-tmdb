@@ -1,5 +1,6 @@
 "use client";
 
+//Provide themes for entire app
 import { ThemeProvider } from "next-themes";
 import React from "react";
 
