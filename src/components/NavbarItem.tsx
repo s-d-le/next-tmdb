@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import React from "react";
 
 export type INavbarItem = {
   title: string;

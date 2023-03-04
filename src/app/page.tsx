@@ -14,7 +14,6 @@ export default async function Home({ searchParams }: any) {
 
   const data = await res.json();
   const results = data.results;
-  console.log(data);
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { IconType } from "react-icons/lib/esm/iconBase";
 import Image from "next/image";
 
