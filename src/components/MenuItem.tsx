@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { IconType } from "react-icons/lib/esm/iconBase";
-import Image from "next/image";
 
 export type IMenuItem = {
   title: string;
