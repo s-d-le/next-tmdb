@@ -12,7 +12,7 @@ export default async function SearchPage({ params }: any) {
     throw new Error("Error fetching data");
   }
 
-  // use await so we get a type response and not promise
+  //Use await so we get a type response and not promise
   const data = await res.json();
 
   const results = data.results;
